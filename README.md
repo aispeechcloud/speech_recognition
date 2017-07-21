@@ -15,7 +15,7 @@
 
 # 執行方式
 --------------------------  
- 1. 請到 http://aispeechcloud.online 註冊一個帳號
+ 1. 請到 https://aispeechcloud.online 註冊一個帳號
  2. 註冊完後會有確認信函
  3. 點擊確認網址後會得到 token，權限為一天 2000 次，無限期
  4. 匯入 jar 檔
@@ -41,7 +41,7 @@ import mybusiness.util.RecognitionClientListener;
 public class Test {
 	
 	public static void main(String[] args) throws IOException{
-		RecognitionClient client = new RecognitionClient("aispeechcloud.online/Service/RecognitionService",new MyRecognitionClientListener(),false);  
+		RecognitionClient client = new RecognitionClient("aispeechcloud.online/Service/RecognitionService",new MyRecognitionClientListener(),true);  
 	    //設定逾時(1/1000秒)
 		RecognitionClient.setTimeout(20000);
 		
